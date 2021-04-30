@@ -1,0 +1,35 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/tb_isim_beh.exe -prj C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/tb_beh.prj work.tb work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/ModuloMux.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/ModuloDMux.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/ModuloAnd.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/FF_SR.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/FF_D.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Enable_S1.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Proyecto.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/piston.v" into library work
+Analyzing Verilog file "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Testeov2.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module piston(DELAY=100,A0_INIT=1)
+Compiling module Enable_S1_S2_S3_S4
+Compiling module ModuloDMux
+Compiling module ModuloMux
+Compiling module ModuloAnd
+Compiling module FF_SR
+Compiling module FF_D
+Compiling module Slot
+Compiling module Proyecto
+Compiling module tb
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 11 Verilog Units
+Built simulation executable C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/tb_isim_beh.exe
+Fuse Memory Usage: 28484 KB
+Fuse CPU Usage: 655 ms

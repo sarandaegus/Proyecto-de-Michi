@@ -1,0 +1,530 @@
+|Proyecto
+START_BUTTON => START_BUTTON.IN1
+a0 => a0.IN2
+a1 => a1.IN1
+b0 => b0.IN1
+b1 => b1.IN1
+RESET1_BUTTON => RESET1_BUTTON.IN1
+RESET2_BUTTON => RESET2_BUTTON.IN1
+RESET3_BUTTON => RESET3_BUTTON.IN1
+RESET4_BUTTON => RESET4_BUTTON.IN1
+STOP_REANUDAR_BUTTON => ~NO_FANOUT~
+Ap << Slot:U1.Q
+Bp << Slot:U2.Q
+Am << Slot:U3.Q
+Bm << Slot:U4.Q
+INPUT1_MUX1_SLOT1 => INPUT1_MUX1_SLOT1.IN1
+OUT0_DMUX1_SLOT1 << Slot:U1.OUT0_DMUX1
+Q_MUX4_SLOT1 << Slot:U1.Q_MUX4
+INPUT0_MUX6_SLOT1 => INPUT0_MUX6_SLOT1.IN1
+OUT1_DMUX2_SLOT1 << Slot:U2.OUT1_DMUX2
+INPUT0_MUX3_SLOT1 => INPUT0_MUX3_SLOT1.IN1
+INPUT1_MUX5_SLOT1 => INPUT1_MUX5_SLOT1.IN1
+Q_MUX6_SLOT1 << Slot:U2.Q_MUX6
+INPUT1_MUX1_SLOT2 => INPUT1_MUX1_SLOT2.IN1
+OUT0_DMUX1_SLOT2 << Slot:U3.OUT0_DMUX1
+Q_MUX4_SLOT2 << Slot:U3.Q_MUX4
+INPUT0_MUX6_SLOT2 => INPUT0_MUX6_SLOT2.IN1
+OUT1_DMUX2_SLOT2 << Slot:U4.OUT1_DMUX2
+INPUT0_MUX3_SLOT2 => INPUT0_MUX3_SLOT2.IN1
+INPUT1_MUX5_SLOT2 => INPUT1_MUX5_SLOT2.IN1
+Q_MUX6_SLOT2 << Slot:U4.Q_MUX6
+CLK => CLK.IN4
+
+
+|Proyecto|Slot:U1
+INICIO => INICIO.IN1
+INTERMEDIO => INTERMEDIO.IN1
+FINAL => FINAL.IN1
+RESET => RESET.IN1
+IN1 => IN1.IN1
+IN2 => IN2.IN1
+IN3 => IN3.IN1
+CLK => CLK.IN3
+INPUT1_MUX1 => INPUT1_MUX1.IN1
+OUT0_DMUX1 <= ModuloDMux:DM1.cero
+Q_MUX4 <= Q_MUX4.DB_MAX_OUTPUT_PORT_TYPE
+INPUT0_MUX6 => INPUT0_MUX6.IN1
+OUT1_DMUX2 <= ModuloDMux:DM2.uno
+INPUT0_MUX3 => INPUT0_MUX3.IN1
+INPUT1_MUX5 => INPUT1_MUX5.IN1
+Q_MUX6 <= Q_MUX6.DB_MAX_OUTPUT_PORT_TYPE
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|Enable_S1_S2_S3_S4:u1
+A => S2.IN0
+A => S1.IN0
+A => S1.IN0
+B => S1.IN1
+B => S1.IN1
+B => S2.IN1
+C => S1.IN1
+C => S1.IN1
+C => S2.IN1
+S1 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= S2.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= S3.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloDMux:DM1
+I => cero.IN0
+I => uno.IN0
+sel => uno.IN1
+sel => cero.IN1
+cero <= cero.DB_MAX_OUTPUT_PORT_TYPE
+uno <= uno.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloMux:MUX6
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloMux:MUX1
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloAnd:And_inputs
+IN0 => OUT.IN0
+IN1 => OUT.IN1
+IN2 => OUT.IN1
+IN3 => OUT.IN1
+OUT <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|FF_SR:SR1
+S => Mux0.IN3
+R => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|FF_SR:SR2
+S => Mux0.IN3
+R => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloMux:MUX2
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|FF_D:D1
+D => Decoder0.IN0
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloDMux:DM2
+I => cero.IN0
+I => uno.IN0
+sel => uno.IN1
+sel => cero.IN1
+cero <= cero.DB_MAX_OUTPUT_PORT_TYPE
+uno <= uno.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloMux:MUX5
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloMux:MUX4
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U1|ModuloMux:MUX3
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2
+INICIO => INICIO.IN1
+INTERMEDIO => INTERMEDIO.IN1
+FINAL => FINAL.IN1
+RESET => RESET.IN1
+IN1 => IN1.IN1
+IN2 => IN2.IN1
+IN3 => IN3.IN1
+CLK => CLK.IN3
+INPUT1_MUX1 => INPUT1_MUX1.IN1
+OUT0_DMUX1 <= ModuloDMux:DM1.cero
+Q_MUX4 <= Q_MUX4.DB_MAX_OUTPUT_PORT_TYPE
+INPUT0_MUX6 => INPUT0_MUX6.IN1
+OUT1_DMUX2 <= ModuloDMux:DM2.uno
+INPUT0_MUX3 => INPUT0_MUX3.IN1
+INPUT1_MUX5 => INPUT1_MUX5.IN1
+Q_MUX6 <= Q_MUX6.DB_MAX_OUTPUT_PORT_TYPE
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|Enable_S1_S2_S3_S4:u1
+A => S2.IN0
+A => S1.IN0
+A => S1.IN0
+B => S1.IN1
+B => S1.IN1
+B => S2.IN1
+C => S1.IN1
+C => S1.IN1
+C => S2.IN1
+S1 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= S2.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= S3.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloDMux:DM1
+I => cero.IN0
+I => uno.IN0
+sel => uno.IN1
+sel => cero.IN1
+cero <= cero.DB_MAX_OUTPUT_PORT_TYPE
+uno <= uno.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloMux:MUX6
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloMux:MUX1
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloAnd:And_inputs
+IN0 => OUT.IN0
+IN1 => OUT.IN1
+IN2 => OUT.IN1
+IN3 => OUT.IN1
+OUT <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|FF_SR:SR1
+S => Mux0.IN3
+R => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|FF_SR:SR2
+S => Mux0.IN3
+R => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloMux:MUX2
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|FF_D:D1
+D => Decoder0.IN0
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloDMux:DM2
+I => cero.IN0
+I => uno.IN0
+sel => uno.IN1
+sel => cero.IN1
+cero <= cero.DB_MAX_OUTPUT_PORT_TYPE
+uno <= uno.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloMux:MUX5
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloMux:MUX4
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U2|ModuloMux:MUX3
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3
+INICIO => INICIO.IN1
+INTERMEDIO => INTERMEDIO.IN1
+FINAL => FINAL.IN1
+RESET => RESET.IN1
+IN1 => IN1.IN1
+IN2 => IN2.IN1
+IN3 => IN3.IN1
+CLK => CLK.IN3
+INPUT1_MUX1 => INPUT1_MUX1.IN1
+OUT0_DMUX1 <= ModuloDMux:DM1.cero
+Q_MUX4 <= Q_MUX4.DB_MAX_OUTPUT_PORT_TYPE
+INPUT0_MUX6 => INPUT0_MUX6.IN1
+OUT1_DMUX2 <= ModuloDMux:DM2.uno
+INPUT0_MUX3 => INPUT0_MUX3.IN1
+INPUT1_MUX5 => INPUT1_MUX5.IN1
+Q_MUX6 <= Q_MUX6.DB_MAX_OUTPUT_PORT_TYPE
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|Enable_S1_S2_S3_S4:u1
+A => S2.IN0
+A => S1.IN0
+A => S1.IN0
+B => S1.IN1
+B => S1.IN1
+B => S2.IN1
+C => S1.IN1
+C => S1.IN1
+C => S2.IN1
+S1 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= S2.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= S3.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloDMux:DM1
+I => cero.IN0
+I => uno.IN0
+sel => uno.IN1
+sel => cero.IN1
+cero <= cero.DB_MAX_OUTPUT_PORT_TYPE
+uno <= uno.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloMux:MUX6
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloMux:MUX1
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloAnd:And_inputs
+IN0 => OUT.IN0
+IN1 => OUT.IN1
+IN2 => OUT.IN1
+IN3 => OUT.IN1
+OUT <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|FF_SR:SR1
+S => Mux0.IN3
+R => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|FF_SR:SR2
+S => Mux0.IN3
+R => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloMux:MUX2
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|FF_D:D1
+D => Decoder0.IN0
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloDMux:DM2
+I => cero.IN0
+I => uno.IN0
+sel => uno.IN1
+sel => cero.IN1
+cero <= cero.DB_MAX_OUTPUT_PORT_TYPE
+uno <= uno.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloMux:MUX5
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloMux:MUX4
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U3|ModuloMux:MUX3
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4
+INICIO => INICIO.IN1
+INTERMEDIO => INTERMEDIO.IN1
+FINAL => FINAL.IN1
+RESET => RESET.IN1
+IN1 => IN1.IN1
+IN2 => IN2.IN1
+IN3 => IN3.IN1
+CLK => CLK.IN3
+INPUT1_MUX1 => INPUT1_MUX1.IN1
+OUT0_DMUX1 <= ModuloDMux:DM1.cero
+Q_MUX4 <= Q_MUX4.DB_MAX_OUTPUT_PORT_TYPE
+INPUT0_MUX6 => INPUT0_MUX6.IN1
+OUT1_DMUX2 <= ModuloDMux:DM2.uno
+INPUT0_MUX3 => INPUT0_MUX3.IN1
+INPUT1_MUX5 => INPUT1_MUX5.IN1
+Q_MUX6 <= Q_MUX6.DB_MAX_OUTPUT_PORT_TYPE
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|Enable_S1_S2_S3_S4:u1
+A => S2.IN0
+A => S1.IN0
+A => S1.IN0
+B => S1.IN1
+B => S1.IN1
+B => S2.IN1
+C => S1.IN1
+C => S1.IN1
+C => S2.IN1
+S1 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+S2 <= S2.DB_MAX_OUTPUT_PORT_TYPE
+S3 <= S3.DB_MAX_OUTPUT_PORT_TYPE
+S4 <= S1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloDMux:DM1
+I => cero.IN0
+I => uno.IN0
+sel => uno.IN1
+sel => cero.IN1
+cero <= cero.DB_MAX_OUTPUT_PORT_TYPE
+uno <= uno.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloMux:MUX6
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloMux:MUX1
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloAnd:And_inputs
+IN0 => OUT.IN0
+IN1 => OUT.IN1
+IN2 => OUT.IN1
+IN3 => OUT.IN1
+OUT <= OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|FF_SR:SR1
+S => Mux0.IN3
+R => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|FF_SR:SR2
+S => Mux0.IN3
+R => Mux0.IN4
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloMux:MUX2
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|FF_D:D1
+D => Decoder0.IN0
+clk => q~reg0.CLK
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloDMux:DM2
+I => cero.IN0
+I => uno.IN0
+sel => uno.IN1
+sel => cero.IN1
+cero <= cero.DB_MAX_OUTPUT_PORT_TYPE
+uno <= uno.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloMux:MUX5
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloMux:MUX4
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Proyecto|Slot:U4|ModuloMux:MUX3
+uno => Q.DATAB
+cero => Q.DATAA
+sel => Decoder0.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+

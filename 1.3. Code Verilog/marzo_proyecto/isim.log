@@ -1,0 +1,11 @@
+ISim log file
+Running: C:\Users\Sergio\Documents\XILINX\Verilog\marzo_proyecto\tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -view C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/waveform2.wcfg -wdb C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# run 1000 ns
+Simulator is doing circuit initialization process.
+seed : 12153524
+Finished circuit initialization process.
+Cycle Completed

@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at Proyecto.v(36): object "a1" differs only in case from object "A1" in the same scope File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 36
+Info (10281): Verilog HDL Declaration information at Proyecto.v(38): object "b1" differs only in case from object "B1" in the same scope File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 38

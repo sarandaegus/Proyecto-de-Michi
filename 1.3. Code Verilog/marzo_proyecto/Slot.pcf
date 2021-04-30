@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Mar 02 16:36:21 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+CONFIG VCCAUX = "3.3";
+COMP "INPUT0_MUX3" LOCATE = SITE "V5" LEVEL 1;
+COMP "INPUT0_MUX6" LOCATE = SITE "U7" LEVEL 1;
+COMP "DIP1" LOCATE = SITE "C17" LEVEL 1;
+COMP "DIP2" LOCATE = SITE "C18" LEVEL 1;
+COMP "DIP3" LOCATE = SITE "D17" LEVEL 1;
+COMP "INPUT1_MUX1" LOCATE = SITE "R3" LEVEL 1;
+COMP "INPUT1_MUX5" LOCATE = SITE "V4" LEVEL 1;
+COMP "LED1" LOCATE = SITE "P15" LEVEL 1;
+COMP "LED2" LOCATE = SITE "P16" LEVEL 1;
+COMP "LED3" LOCATE = SITE "N15" LEVEL 1;
+COMP "LED4" LOCATE = SITE "N16" LEVEL 1;
+SCHEMATIC END;
+

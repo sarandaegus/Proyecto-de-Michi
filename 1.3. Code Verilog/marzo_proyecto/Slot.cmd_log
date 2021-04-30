@@ -1,0 +1,128 @@
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Slot.ngc Slot_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Slot.ngc Slot.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Slot_map.ncd Slot.ngd Slot.pcf 
+par -w -intstyle ise -ol high -mt off Slot_map.ncd Slot.ncd Slot.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Slot.twx Slot.ncd -o Slot.twr Slot.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Slot.ut Slot.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Slot.syr" 

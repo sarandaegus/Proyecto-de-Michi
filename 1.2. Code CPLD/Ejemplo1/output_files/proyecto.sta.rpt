@@ -1,0 +1,380 @@
+Timing Analyzer report for proyecto
+Tue Mar 16 18:46:38 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. SDC File List
+  5. Clocks
+  6. Fmax Summary
+  7. Setup Summary
+  8. Hold Summary
+  9. Recovery Summary
+ 10. Removal Summary
+ 11. Minimum Pulse Width Summary
+ 12. Setup: 'CLK'
+ 13. Hold: 'CLK'
+ 14. Setup Transfers
+ 15. Hold Transfers
+ 16. Report TCCS
+ 17. Report RSKM
+ 18. Unconstrained Paths Summary
+ 19. Clock Status Summary
+ 20. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; proyecto                                            ;
+; Device Family         ; MAX II                                              ;
+; Device Name           ; EPM240T100C5                                        ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------+
+; SDC File List                                     ;
++---------------+--------+--------------------------+
+; SDC File Path ; Status ; Read at                  ;
++---------------+--------+--------------------------+
+; SDC1.sdc      ; OK     ; Tue Mar 16 18:46:38 2021 ;
++---------------+--------+--------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                          ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; Clock Name ; Type ; Period ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+; CLK        ; Base ; 20.000 ; 50.0 MHz  ; 0.000 ; 10.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { CLK } ;
++------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------+
+
+
++------------------------------------------------+
+; Fmax Summary                                   ;
++----------+-----------------+------------+------+
+; Fmax     ; Restricted Fmax ; Clock Name ; Note ;
++----------+-----------------+------------+------+
+; 63.5 MHz ; 63.5 MHz        ; CLK        ;      ;
++----------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------+
+; Setup Summary                 ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 4.251 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Hold Summary                  ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 1.639 ; 0.000         ;
++-------+-------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++-------------------------------+
+; Minimum Pulse Width Summary   ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; CLK   ; 9.734 ; 0.000         ;
++-------+-------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'CLK'                                                                                                             ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node           ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; 4.251  ; a0                  ; Q_MUX6_SLOT1        ; CLK          ; CLK         ; 20.000       ; 0.000      ; 10.749     ;
+; 4.408  ; START_BUTTON        ; Q_MUX6_SLOT1        ; CLK          ; CLK         ; 20.000       ; 0.000      ; 10.592     ;
+; 4.665  ; b0                  ; Q_MUX6_SLOT1        ; CLK          ; CLK         ; 20.000       ; 0.000      ; 10.335     ;
+; 4.722  ; INPUT1_MUX1_SLOT2   ; OUT0_DMUX1_SLOT2    ; CLK          ; CLK         ; 20.000       ; 0.000      ; 10.278     ;
+; 4.792  ; INPUT1_MUX5_SLOT1   ; Q_MUX6_SLOT1        ; CLK          ; CLK         ; 20.000       ; 0.000      ; 10.208     ;
+; 5.129  ; b1                  ; OUT0_DMUX1_SLOT2    ; CLK          ; CLK         ; 20.000       ; 0.000      ; 9.871      ;
+; 6.414  ; INPUT0_MUX6_SLOT2   ; Q_MUX6_SLOT2        ; CLK          ; CLK         ; 20.000       ; 0.000      ; 8.586      ;
+; 7.311  ; INPUT1_MUX5_SLOT1   ; Q_MUX4_SLOT1        ; CLK          ; CLK         ; 20.000       ; 0.000      ; 7.689      ;
+; 8.934  ; Slot:U2|FF_SR:SR1|q ; Bp                  ; CLK          ; CLK         ; 20.000       ; -3.348     ; 5.718      ;
+; 9.266  ; Slot:U1|FF_SR:SR1|q ; Ap                  ; CLK          ; CLK         ; 20.000       ; -3.348     ; 5.386      ;
+; 9.311  ; Slot:U2|FF_SR:SR1|q ; OUT1_DMUX2_SLOT1    ; CLK          ; CLK         ; 20.000       ; -3.348     ; 5.341      ;
+; 9.326  ; Slot:U4|FF_SR:SR1|q ; Bm                  ; CLK          ; CLK         ; 20.000       ; -3.348     ; 5.326      ;
+; 10.030 ; Slot:U3|FF_SR:SR1|q ; Am                  ; CLK          ; CLK         ; 20.000       ; -3.348     ; 4.622      ;
+; 10.586 ; a0                  ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 9.429      ;
+; 10.587 ; a0                  ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 9.428      ;
+; 10.743 ; START_BUTTON        ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 9.272      ;
+; 10.744 ; START_BUTTON        ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 9.271      ;
+; 11.000 ; b0                  ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 9.015      ;
+; 11.001 ; b0                  ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 9.014      ;
+; 11.127 ; INPUT1_MUX5_SLOT1   ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 8.888      ;
+; 11.128 ; INPUT1_MUX5_SLOT1   ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 8.887      ;
+; 12.094 ; INPUT1_MUX1_SLOT2   ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 7.921      ;
+; 12.198 ; a1                  ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 7.817      ;
+; 12.278 ; a0                  ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 7.737      ;
+; 12.501 ; b1                  ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 7.514      ;
+; 12.986 ; RESET2_BUTTON       ; Slot:U2|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 7.029      ;
+; 13.459 ; b1                  ; Slot:U3|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.556      ;
+; 13.472 ; RESET4_BUTTON       ; Slot:U4|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.543      ;
+; 13.497 ; RESET1_BUTTON       ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.518      ;
+; 13.537 ; RESET3_BUTTON       ; Slot:U3|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.478      ;
+; 13.721 ; INPUT1_MUX1_SLOT2   ; Slot:U3|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.294      ;
+; 13.725 ; a0                  ; Slot:U3|FF_D:D1|q   ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.290      ;
+; 13.728 ; a0                  ; Slot:U4|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.287      ;
+; 13.777 ; a1                  ; Slot:U1|FF_D:D1|q   ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.238      ;
+; 13.780 ; a1                  ; Slot:U2|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 3.348      ; 6.235      ;
+; 14.071 ; INPUT0_MUX6_SLOT2   ; Slot:U4|FF_D:D1|q   ; CLK          ; CLK         ; 20.000       ; 3.348      ; 5.944      ;
+; 14.321 ; INPUT0_MUX3_SLOT1   ; Slot:U2|FF_D:D1|q   ; CLK          ; CLK         ; 20.000       ; 3.348      ; 5.694      ;
+; 15.157 ; Slot:U1|FF_SR:SR1|q ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 4.510      ;
+; 16.003 ; Slot:U3|FF_SR:SR1|q ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 3.664      ;
+; 16.390 ; Slot:U4|FF_D:D1|q   ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 3.277      ;
+; 16.473 ; Slot:U1|FF_D:D1|q   ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 3.194      ;
+; 16.709 ; Slot:U3|FF_D:D1|q   ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.958      ;
+; 16.743 ; Slot:U1|FF_SR:SR1|q ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.924      ;
+; 16.752 ; Slot:U1|FF_SR:SR1|q ; Slot:U2|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.915      ;
+; 16.760 ; Slot:U1|FF_SR:SR1|q ; Slot:U1|FF_D:D1|q   ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.907      ;
+; 16.787 ; Slot:U1|FF_SR:SR2|q ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.880      ;
+; 16.869 ; Slot:U2|FF_SR:SR2|q ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.798      ;
+; 17.157 ; Slot:U3|FF_SR:SR1|q ; Slot:U4|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.510      ;
+; 17.170 ; Slot:U4|FF_SR:SR2|q ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.497      ;
+; 17.318 ; Slot:U3|FF_SR:SR2|q ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.349      ;
+; 17.318 ; Slot:U3|FF_SR:SR2|q ; Slot:U3|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.349      ;
+; 17.343 ; Slot:U2|FF_SR:SR2|q ; Slot:U2|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.324      ;
+; 17.478 ; Slot:U3|FF_SR:SR1|q ; Slot:U3|FF_D:D1|q   ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.189      ;
+; 17.485 ; Slot:U3|FF_SR:SR1|q ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.182      ;
+; 17.492 ; Slot:U4|FF_SR:SR2|q ; Slot:U4|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.175      ;
+; 17.545 ; Slot:U2|FF_D:D1|q   ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.122      ;
+; 17.547 ; Slot:U1|FF_SR:SR2|q ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 2.120      ;
+; 17.806 ; Slot:U2|FF_SR:SR1|q ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 1.861      ;
+; 17.807 ; Slot:U4|FF_SR:SR1|q ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 20.000       ; 0.000      ; 1.860      ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'CLK'                                                                                                              ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node           ; To Node             ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+; 1.639  ; Slot:U4|FF_SR:SR1|q ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.860      ;
+; 1.640  ; Slot:U2|FF_SR:SR1|q ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 1.861      ;
+; 1.899  ; Slot:U1|FF_SR:SR2|q ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.120      ;
+; 1.901  ; Slot:U2|FF_D:D1|q   ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.122      ;
+; 1.954  ; Slot:U4|FF_SR:SR2|q ; Slot:U4|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.175      ;
+; 1.961  ; Slot:U3|FF_SR:SR1|q ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.182      ;
+; 1.968  ; Slot:U3|FF_SR:SR1|q ; Slot:U3|FF_D:D1|q   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.189      ;
+; 2.103  ; Slot:U2|FF_SR:SR2|q ; Slot:U2|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.324      ;
+; 2.128  ; Slot:U3|FF_SR:SR2|q ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.349      ;
+; 2.128  ; Slot:U3|FF_SR:SR2|q ; Slot:U3|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.349      ;
+; 2.276  ; Slot:U4|FF_SR:SR2|q ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.497      ;
+; 2.289  ; Slot:U3|FF_SR:SR1|q ; Slot:U4|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.510      ;
+; 2.577  ; Slot:U2|FF_SR:SR2|q ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.798      ;
+; 2.659  ; Slot:U1|FF_SR:SR2|q ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.880      ;
+; 2.686  ; Slot:U1|FF_SR:SR1|q ; Slot:U1|FF_D:D1|q   ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.907      ;
+; 2.694  ; Slot:U1|FF_SR:SR1|q ; Slot:U2|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.915      ;
+; 2.703  ; Slot:U1|FF_SR:SR1|q ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.924      ;
+; 2.737  ; Slot:U3|FF_D:D1|q   ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 2.958      ;
+; 2.973  ; Slot:U1|FF_D:D1|q   ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.194      ;
+; 3.056  ; Slot:U4|FF_D:D1|q   ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.277      ;
+; 3.443  ; Slot:U3|FF_SR:SR1|q ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 3.664      ;
+; 4.125  ; INPUT0_MUX3_SLOT1   ; Slot:U2|FF_D:D1|q   ; CLK          ; CLK         ; 0.000        ; 3.348      ; 5.694      ;
+; 4.289  ; Slot:U1|FF_SR:SR1|q ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 0.000      ; 4.510      ;
+; 4.375  ; INPUT0_MUX6_SLOT2   ; Slot:U4|FF_D:D1|q   ; CLK          ; CLK         ; 0.000        ; 3.348      ; 5.944      ;
+; 4.666  ; a1                  ; Slot:U2|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.235      ;
+; 4.669  ; a1                  ; Slot:U1|FF_D:D1|q   ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.238      ;
+; 4.718  ; a0                  ; Slot:U4|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.287      ;
+; 4.721  ; a0                  ; Slot:U3|FF_D:D1|q   ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.290      ;
+; 4.725  ; INPUT1_MUX1_SLOT2   ; Slot:U3|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.294      ;
+; 4.909  ; RESET3_BUTTON       ; Slot:U3|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.478      ;
+; 4.949  ; RESET1_BUTTON       ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.518      ;
+; 4.974  ; RESET4_BUTTON       ; Slot:U4|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.543      ;
+; 4.987  ; b1                  ; Slot:U3|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 6.556      ;
+; 5.460  ; RESET2_BUTTON       ; Slot:U2|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 7.029      ;
+; 5.945  ; b1                  ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 7.514      ;
+; 6.168  ; a0                  ; Slot:U4|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 7.737      ;
+; 6.248  ; a1                  ; Slot:U2|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 7.817      ;
+; 6.352  ; INPUT1_MUX1_SLOT2   ; Slot:U3|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 7.921      ;
+; 7.318  ; INPUT1_MUX5_SLOT1   ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 8.887      ;
+; 7.319  ; INPUT1_MUX5_SLOT1   ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 8.888      ;
+; 7.445  ; b0                  ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 9.014      ;
+; 7.446  ; b0                  ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 9.015      ;
+; 7.702  ; START_BUTTON        ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 9.271      ;
+; 7.703  ; START_BUTTON        ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 9.272      ;
+; 7.859  ; a0                  ; Slot:U1|FF_SR:SR2|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 9.428      ;
+; 7.860  ; a0                  ; Slot:U1|FF_SR:SR1|q ; CLK          ; CLK         ; 0.000        ; 3.348      ; 9.429      ;
+; 9.970  ; Slot:U3|FF_SR:SR1|q ; Am                  ; CLK          ; CLK         ; 0.000        ; -3.348     ; 4.622      ;
+; 10.674 ; Slot:U4|FF_SR:SR1|q ; Bm                  ; CLK          ; CLK         ; 0.000        ; -3.348     ; 5.326      ;
+; 10.689 ; Slot:U2|FF_SR:SR1|q ; OUT1_DMUX2_SLOT1    ; CLK          ; CLK         ; 0.000        ; -3.348     ; 5.341      ;
+; 10.734 ; Slot:U1|FF_SR:SR1|q ; Ap                  ; CLK          ; CLK         ; 0.000        ; -3.348     ; 5.386      ;
+; 11.066 ; Slot:U2|FF_SR:SR1|q ; Bp                  ; CLK          ; CLK         ; 0.000        ; -3.348     ; 5.718      ;
+; 11.689 ; INPUT1_MUX5_SLOT1   ; Q_MUX4_SLOT1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 7.689      ;
+; 12.586 ; INPUT0_MUX6_SLOT2   ; Q_MUX6_SLOT2        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 8.586      ;
+; 13.871 ; b1                  ; OUT0_DMUX1_SLOT2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 9.871      ;
+; 14.208 ; INPUT1_MUX5_SLOT1   ; Q_MUX6_SLOT1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 10.208     ;
+; 14.278 ; INPUT1_MUX1_SLOT2   ; OUT0_DMUX1_SLOT2    ; CLK          ; CLK         ; 0.000        ; 0.000      ; 10.278     ;
+; 14.335 ; b0                  ; Q_MUX6_SLOT1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 10.335     ;
+; 14.592 ; START_BUTTON        ; Q_MUX6_SLOT1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 10.592     ;
+; 14.749 ; a0                  ; Q_MUX6_SLOT1        ; CLK          ; CLK         ; 0.000        ; 0.000      ; 10.749     ;
++--------+---------------------+---------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 59       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; CLK        ; CLK      ; 59       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 0     ; 0    ;
+; Unconstrained Output Port Paths ; 0     ; 0    ;
++---------------------------------+-------+------+
+
+
++-------------------------------------+
+; Clock Status Summary                ;
++--------+-------+------+-------------+
+; Target ; Clock ; Type ; Status      ;
++--------+-------+------+-------------+
+; CLK    ; CLK   ; Base ; Constrained ;
++--------+-------+------+-------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Mar 16 18:46:37 2021
+Info: Command: quartus_sta proyecto -c proyecto
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332104): Reading SDC File: 'SDC1.sdc'
+Warning (332153): Family doesn't support jitter analysis.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Info (332146): Worst-case setup slack is 4.251
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     4.251               0.000 CLK 
+Info (332146): Worst-case hold slack is 1.639
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     1.639               0.000 CLK 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is 9.734
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.734               0.000 CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4684 megabytes
+    Info: Processing ended: Tue Mar 16 18:46:38 2021
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

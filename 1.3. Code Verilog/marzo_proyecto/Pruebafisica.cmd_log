@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Pruebafisica.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Pruebafisica.syr" 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Pruebafisica.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Pruebafisica.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Pruebafisica.ngc Pruebafisica.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Pruebafisica.ngc Pruebafisica.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Pruebafisica.ngc Pruebafisica.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Pruebafisica_map.ncd Pruebafisica.ngd Pruebafisica.pcf 
+par -w -intstyle ise -ol high -mt off Pruebafisica_map.ncd Pruebafisica.ncd Pruebafisica.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Pruebafisica.twx Pruebafisica.ncd -o Pruebafisica.twr Pruebafisica.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Pruebafisica.ut Pruebafisica.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Pruebafisica.ngc Pruebafisica.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Pruebafisica_map.ncd Pruebafisica.ngd Pruebafisica.pcf 
+par -w -intstyle ise -ol high -mt off Pruebafisica_map.ncd Pruebafisica.ncd Pruebafisica.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Pruebafisica.twx Pruebafisica.ncd -o Pruebafisica.twr Pruebafisica.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Pruebafisica.ut Pruebafisica.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Pruebafisica.ngc Pruebafisica.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Pruebafisica_map.ncd Pruebafisica.ngd Pruebafisica.pcf 
+par -w -intstyle ise -ol high -mt off Pruebafisica_map.ncd Pruebafisica.ncd Pruebafisica.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Pruebafisica.twx Pruebafisica.ncd -o Pruebafisica.twr Pruebafisica.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Pruebafisica.ut Pruebafisica.ncd 
+xst -intstyle ise -ifn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Pruebafisica.xst" -ofn "C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/Pruebafisica.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc spartan.ucf -p xc6slx9-csg324-3 Pruebafisica.ngc Pruebafisica.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Pruebafisica_map.ncd Pruebafisica.ngd Pruebafisica.pcf 
+par -w -intstyle ise -ol high -mt off Pruebafisica_map.ncd Pruebafisica.ncd Pruebafisica.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Pruebafisica.twx Pruebafisica.ncd -o Pruebafisica.twr Pruebafisica.pcf -ucf spartan.ucf 
+bitgen -intstyle ise -f Pruebafisica.ut Pruebafisica.ncd 

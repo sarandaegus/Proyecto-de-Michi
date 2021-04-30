@@ -1,0 +1,364 @@
+Analysis & Synthesis report for proyecto
+Tue Mar 16 18:46:29 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "Slot:U4"
+ 10. Port Connectivity Checks: "Slot:U3"
+ 11. Port Connectivity Checks: "Slot:U2"
+ 12. Port Connectivity Checks: "Slot:U1|ModuloMux:MUX4"
+ 13. Port Connectivity Checks: "Slot:U1"
+ 14. Analysis & Synthesis Messages
+ 15. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Tue Mar 16 18:46:29 2021       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; proyecto                                    ;
+; Top-level Entity Name       ; Proyecto                                    ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 16                                          ;
+; Total pins                  ; 31                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; Proyecto           ; proyecto           ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+; ModuloDMux.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/ModuloDMux.v         ;         ;
+; ModuloMux.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/ModuloMux.v          ;         ;
+; ModuloAnd.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/ModuloAnd.v          ;         ;
+; FF_SR.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/FF_SR.v              ;         ;
+; FF_D.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/FF_D.v               ;         ;
+; Slot.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Slot.v               ;         ;
+; Enable_S1_S2_S3_S4.v             ; yes             ; User Verilog HDL File  ; C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Enable_S1_S2_S3_S4.v ;         ;
+; Proyecto.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v           ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 16    ;
+;     -- Combinational with no register       ; 4     ;
+;     -- Register only                        ; 4     ;
+;     -- Combinational with a register        ; 8     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 8     ;
+;     -- 3 input functions                    ; 1     ;
+;     -- 2 input functions                    ; 3     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 16    ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 12    ;
+; I/O pins                                    ; 31    ;
+; Maximum fan-out node                        ; CLK   ;
+; Maximum fan-out                             ; 12    ;
+; Total fan-out                               ; 66    ;
+; Average fan-out                             ; 1.40  ;
++---------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                     ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node   ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                    ; Entity Name ; Library Name ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+-------------+--------------+
+; |Proyecto                    ; 16 (0)      ; 12           ; 0          ; 31   ; 0            ; 4 (0)        ; 4 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto                              ; Proyecto    ; work         ;
+;    |Slot:U1|                 ; 4 (0)       ; 3            ; 0          ; 0    ; 0            ; 1 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U1                      ; Slot        ; work         ;
+;       |FF_D:D1|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U1|FF_D:D1              ; FF_D        ; work         ;
+;       |FF_SR:SR1|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U1|FF_SR:SR1            ; FF_SR       ; work         ;
+;       |FF_SR:SR2|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U1|FF_SR:SR2            ; FF_SR       ; work         ;
+;       |ModuloAnd:And_inputs| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U1|ModuloAnd:And_inputs ; ModuloAnd   ; work         ;
+;    |Slot:U2|                 ; 4 (0)       ; 3            ; 0          ; 0    ; 0            ; 1 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U2                      ; Slot        ; work         ;
+;       |FF_D:D1|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U2|FF_D:D1              ; FF_D        ; work         ;
+;       |FF_SR:SR1|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U2|FF_SR:SR1            ; FF_SR       ; work         ;
+;       |FF_SR:SR2|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U2|FF_SR:SR2            ; FF_SR       ; work         ;
+;       |ModuloAnd:And_inputs| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U2|ModuloAnd:And_inputs ; ModuloAnd   ; work         ;
+;    |Slot:U3|                 ; 4 (0)       ; 3            ; 0          ; 0    ; 0            ; 1 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U3                      ; Slot        ; work         ;
+;       |FF_D:D1|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U3|FF_D:D1              ; FF_D        ; work         ;
+;       |FF_SR:SR1|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U3|FF_SR:SR1            ; FF_SR       ; work         ;
+;       |FF_SR:SR2|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U3|FF_SR:SR2            ; FF_SR       ; work         ;
+;       |ModuloAnd:And_inputs| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U3|ModuloAnd:And_inputs ; ModuloAnd   ; work         ;
+;    |Slot:U4|                 ; 4 (0)       ; 3            ; 0          ; 0    ; 0            ; 1 (0)        ; 1 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U4                      ; Slot        ; work         ;
+;       |FF_D:D1|              ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U4|FF_D:D1              ; FF_D        ; work         ;
+;       |FF_SR:SR1|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U4|FF_SR:SR1            ; FF_SR       ; work         ;
+;       |FF_SR:SR2|            ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U4|FF_SR:SR2            ; FF_SR       ; work         ;
+;       |ModuloAnd:And_inputs| ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |Proyecto|Slot:U4|ModuloAnd:And_inputs ; ModuloAnd   ; work         ;
++------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+----------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 12    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "Slot:U4"          ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; INICIO     ; Input ; Info     ; Stuck at GND ;
+; INTERMEDIO ; Input ; Info     ; Stuck at GND ;
+; FINAL      ; Input ; Info     ; Stuck at VCC ;
+; IN1        ; Input ; Info     ; Stuck at VCC ;
+; IN2        ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "Slot:U3"          ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; INICIO     ; Input ; Info     ; Stuck at GND ;
+; INTERMEDIO ; Input ; Info     ; Stuck at VCC ;
+; FINAL      ; Input ; Info     ; Stuck at GND ;
+; IN1        ; Input ; Info     ; Stuck at VCC ;
+; IN2        ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "Slot:U2"          ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; INICIO     ; Input ; Info     ; Stuck at GND ;
+; INTERMEDIO ; Input ; Info     ; Stuck at VCC ;
+; FINAL      ; Input ; Info     ; Stuck at GND ;
+; IN1        ; Input ; Info     ; Stuck at VCC ;
+; IN2        ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "Slot:U1|ModuloMux:MUX4" ;
++------+-------+----------+--------------------------+
+; Port ; Type  ; Severity ; Details                  ;
++------+-------+----------+--------------------------+
+; uno  ; Input ; Info     ; Stuck at VCC             ;
++------+-------+----------+--------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "Slot:U1"          ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; INICIO     ; Input ; Info     ; Stuck at VCC ;
+; INTERMEDIO ; Input ; Info     ; Stuck at GND ;
+; FINAL      ; Input ; Info     ; Stuck at GND ;
++------------+-------+----------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Tue Mar 16 18:46:12 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off proyecto -c proyecto
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file modulodmux.v
+    Info (12023): Found entity 1: ModuloDMux File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/ModuloDMux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file modulomux.v
+    Info (12023): Found entity 1: ModuloMux File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/ModuloMux.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file moduloand.v
+    Info (12023): Found entity 1: ModuloAnd File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/ModuloAnd.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ff_sr.v
+    Info (12023): Found entity 1: FF_SR File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/FF_SR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ff_d.v
+    Info (12023): Found entity 1: FF_D File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/FF_D.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file slot.v
+    Info (12023): Found entity 1: Slot File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Slot.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file enable_s1_s2_s3_s4.v
+    Info (12023): Found entity 1: Enable_S1_S2_S3_S4 File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Enable_S1_S2_S3_S4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file proyecto.v
+    Info (12023): Found entity 1: Proyecto File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 1
+Info (12127): Elaborating entity "Proyecto" for the top level hierarchy
+Info (12128): Elaborating entity "Slot" for hierarchy "Slot:U1" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 114
+Info (12128): Elaborating entity "Enable_S1_S2_S3_S4" for hierarchy "Slot:U1|Enable_S1_S2_S3_S4:u1" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Slot.v Line: 70
+Info (12128): Elaborating entity "ModuloDMux" for hierarchy "Slot:U1|ModuloDMux:DM1" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Slot.v Line: 77
+Info (12128): Elaborating entity "ModuloMux" for hierarchy "Slot:U1|ModuloMux:MUX6" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Slot.v Line: 84
+Info (12128): Elaborating entity "ModuloAnd" for hierarchy "Slot:U1|ModuloAnd:And_inputs" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Slot.v Line: 99
+Info (12128): Elaborating entity "FF_SR" for hierarchy "Slot:U1|FF_SR:SR1" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Slot.v Line: 106
+Info (12128): Elaborating entity "FF_D" for hierarchy "Slot:U1|FF_D:D1" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Slot.v Line: 126
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "OUT0_DMUX1_SLOT1" is stuck at GND File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 52
+    Warning (13410): Pin "Q_MUX4_SLOT2" is stuck at VCC File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 63
+    Warning (13410): Pin "OUT1_DMUX2_SLOT2" is stuck at GND File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 66
+Warning (21074): Design contains 5 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "STOP_REANUDAR_BUTTON" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 44
+    Warning (15610): No output dependent on input pin "INPUT1_MUX1_SLOT1" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 51
+    Warning (15610): No output dependent on input pin "INPUT0_MUX6_SLOT1" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 54
+    Warning (15610): No output dependent on input pin "INPUT0_MUX3_SLOT2" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 67
+    Warning (15610): No output dependent on input pin "INPUT1_MUX5_SLOT2" File: C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/Proyecto.v Line: 68
+Info (21057): Implemented 47 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 19 input pins
+    Info (21059): Implemented 12 output pins
+    Info (21061): Implemented 16 logic cells
+Info (144001): Generated suppressed messages file C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/output_files/proyecto.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Tue Mar 16 18:46:29 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:41
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Sergio/Documents/ALTERA Proyectos/Ejemplo1/output_files/proyecto.map.smsg.
+
+

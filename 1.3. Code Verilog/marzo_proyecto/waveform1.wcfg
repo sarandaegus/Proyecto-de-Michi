@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Sergio/Documents/XILINX/Verilog/marzo_proyecto/tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="61" />
+   <wvobject fp_name="/tb/IN2_1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN2_1</obj_property>
+      <obj_property name="ObjectShortName">IN2_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN3_1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN3_1</obj_property>
+      <obj_property name="ObjectShortName">IN3_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN1_2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN1_2</obj_property>
+      <obj_property name="ObjectShortName">IN1_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN1_3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN1_3</obj_property>
+      <obj_property name="ObjectShortName">IN1_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN1_4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN1_4</obj_property>
+      <obj_property name="ObjectShortName">IN1_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Q1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Q1</obj_property>
+      <obj_property name="ObjectShortName">Q1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Q2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Q2</obj_property>
+      <obj_property name="ObjectShortName">Q2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Q3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Q3</obj_property>
+      <obj_property name="ObjectShortName">Q3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Q4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Q4</obj_property>
+      <obj_property name="ObjectShortName">Q4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OUT0_DMUX1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">OUT0_DMUX1</obj_property>
+      <obj_property name="ObjectShortName">OUT0_DMUX1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Q_MUX4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Q_MUX4</obj_property>
+      <obj_property name="ObjectShortName">Q_MUX4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/OUT1_DMUX2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">OUT1_DMUX2</obj_property>
+      <obj_property name="ObjectShortName">OUT1_DMUX2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Q_MUX6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Q_MUX6</obj_property>
+      <obj_property name="ObjectShortName">Q_MUX6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/p1_a0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">p1_a0</obj_property>
+      <obj_property name="ObjectShortName">p1_a0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/p1_a1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">p1_a1</obj_property>
+      <obj_property name="ObjectShortName">p1_a1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/p2_a0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">p2_a0</obj_property>
+      <obj_property name="ObjectShortName">p2_a0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/p2_a1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">p2_a1</obj_property>
+      <obj_property name="ObjectShortName">p2_a1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INPUT1_MUX1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INPUT1_MUX1</obj_property>
+      <obj_property name="ObjectShortName">INPUT1_MUX1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INPUT0_MUX6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INPUT0_MUX6</obj_property>
+      <obj_property name="ObjectShortName">INPUT0_MUX6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INPUT0_MUX3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INPUT0_MUX3</obj_property>
+      <obj_property name="ObjectShortName">INPUT0_MUX3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INPUT1_MUX5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INPUT1_MUX5</obj_property>
+      <obj_property name="ObjectShortName">INPUT1_MUX5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/seed" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">seed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">seed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/time_2start" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">time_2start[31:0]</obj_property>
+      <obj_property name="ObjectShortName">time_2start[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/time_reset" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">time_reset[31:0]</obj_property>
+      <obj_property name="ObjectShortName">time_reset[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst_" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst_</obj_property>
+      <obj_property name="ObjectShortName">rst_</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INICIO1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INICIO1</obj_property>
+      <obj_property name="ObjectShortName">INICIO1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INICIO2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INICIO2</obj_property>
+      <obj_property name="ObjectShortName">INICIO2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INICIO3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INICIO3</obj_property>
+      <obj_property name="ObjectShortName">INICIO3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INICIO4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INICIO4</obj_property>
+      <obj_property name="ObjectShortName">INICIO4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INTERMEDIO1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INTERMEDIO1</obj_property>
+      <obj_property name="ObjectShortName">INTERMEDIO1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INTERMEDIO2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INTERMEDIO2</obj_property>
+      <obj_property name="ObjectShortName">INTERMEDIO2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INTERMEDIO3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INTERMEDIO3</obj_property>
+      <obj_property name="ObjectShortName">INTERMEDIO3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/INTERMEDIO4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">INTERMEDIO4</obj_property>
+      <obj_property name="ObjectShortName">INTERMEDIO4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/FIN1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">FIN1</obj_property>
+      <obj_property name="ObjectShortName">FIN1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/FIN2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">FIN2</obj_property>
+      <obj_property name="ObjectShortName">FIN2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/FIN3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">FIN3</obj_property>
+      <obj_property name="ObjectShortName">FIN3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/FIN4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">FIN4</obj_property>
+      <obj_property name="ObjectShortName">FIN4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN1_1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN1_1</obj_property>
+      <obj_property name="ObjectShortName">IN1_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN2_2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN2_2</obj_property>
+      <obj_property name="ObjectShortName">IN2_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN3_2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN3_2</obj_property>
+      <obj_property name="ObjectShortName">IN3_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN2_3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN2_3</obj_property>
+      <obj_property name="ObjectShortName">IN2_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN3_3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN3_3</obj_property>
+      <obj_property name="ObjectShortName">IN3_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN2_4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN2_4</obj_property>
+      <obj_property name="ObjectShortName">IN2_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/IN3_4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IN3_4</obj_property>
+      <obj_property name="ObjectShortName">IN3_4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/RESET1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET1</obj_property>
+      <obj_property name="ObjectShortName">RESET1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/RESET2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET2</obj_property>
+      <obj_property name="ObjectShortName">RESET2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/RESET3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET3</obj_property>
+      <obj_property name="ObjectShortName">RESET3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/RESET4" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RESET4</obj_property>
+      <obj_property name="ObjectShortName">RESET4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/reg1_MUX1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg1_MUX1</obj_property>
+      <obj_property name="ObjectShortName">reg1_MUX1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/reg0_MUX6" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg0_MUX6</obj_property>
+      <obj_property name="ObjectShortName">reg0_MUX6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/reg0_MUX3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg0_MUX3</obj_property>
+      <obj_property name="ObjectShortName">reg0_MUX3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/reg1_MUX5" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reg1_MUX5</obj_property>
+      <obj_property name="ObjectShortName">reg1_MUX5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/PERIOD" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/PISTON_DELAY" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PISTON_DELAY[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PISTON_DELAY[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/PISTON0_A0_INIT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PISTON0_A0_INIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PISTON0_A0_INIT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/PISTON1_A0_INIT" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PISTON1_A0_INIT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PISTON1_A0_INIT[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group90" type="group">
+      <obj_property name="label">New Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb/duv/U1/INICIO" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">INICIO</obj_property>
+         <obj_property name="ObjectShortName">INICIO</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/INTERMEDIO" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">INTERMEDIO</obj_property>
+         <obj_property name="ObjectShortName">INTERMEDIO</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/FINAL" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">FINAL</obj_property>
+         <obj_property name="ObjectShortName">FINAL</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/RESET" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RESET</obj_property>
+         <obj_property name="ObjectShortName">RESET</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/IN1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">IN1</obj_property>
+         <obj_property name="ObjectShortName">IN1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/IN2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">IN2</obj_property>
+         <obj_property name="ObjectShortName">IN2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/IN3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">IN3</obj_property>
+         <obj_property name="ObjectShortName">IN3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/INPUT1_MUX1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">INPUT1_MUX1</obj_property>
+         <obj_property name="ObjectShortName">INPUT1_MUX1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/OUT0_DMUX1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">OUT0_DMUX1</obj_property>
+         <obj_property name="ObjectShortName">OUT0_DMUX1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q_MUX4" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q_MUX4</obj_property>
+         <obj_property name="ObjectShortName">Q_MUX4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/INPUT0_MUX6" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">INPUT0_MUX6</obj_property>
+         <obj_property name="ObjectShortName">INPUT0_MUX6</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/OUT1_DMUX2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">OUT1_DMUX2</obj_property>
+         <obj_property name="ObjectShortName">OUT1_DMUX2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/INPUT0_MUX3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">INPUT0_MUX3</obj_property>
+         <obj_property name="ObjectShortName">INPUT0_MUX3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/INPUT1_MUX5" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">INPUT1_MUX5</obj_property>
+         <obj_property name="ObjectShortName">INPUT1_MUX5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q_MUX6" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q_MUX6</obj_property>
+         <obj_property name="ObjectShortName">Q_MUX6</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q</obj_property>
+         <obj_property name="ObjectShortName">Q</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/S1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">S1</obj_property>
+         <obj_property name="ObjectShortName">S1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/S2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">S2</obj_property>
+         <obj_property name="ObjectShortName">S2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/S3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">S3</obj_property>
+         <obj_property name="ObjectShortName">S3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/S4" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">S4</obj_property>
+         <obj_property name="ObjectShortName">S4</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/OUT1_DM1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">OUT1_DM1</obj_property>
+         <obj_property name="ObjectShortName">OUT1_DM1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/AND_IN" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">AND_IN</obj_property>
+         <obj_property name="ObjectShortName">AND_IN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q_MUX1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q_MUX1</obj_property>
+         <obj_property name="ObjectShortName">Q_MUX1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q_MUX2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q_MUX2</obj_property>
+         <obj_property name="ObjectShortName">Q_MUX2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q_SR" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q_SR</obj_property>
+         <obj_property name="ObjectShortName">Q_SR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q_D" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q_D</obj_property>
+         <obj_property name="ObjectShortName">Q_D</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q_MUX3" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q_MUX3</obj_property>
+         <obj_property name="ObjectShortName">Q_MUX3</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/OUT0_DM2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">OUT0_DM2</obj_property>
+         <obj_property name="ObjectShortName">OUT0_DM2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/Q_MUX5" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q_MUX5</obj_property>
+         <obj_property name="ObjectShortName">Q_MUX5</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/CLK" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">CLK</obj_property>
+         <obj_property name="ObjectShortName">CLK</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group125" type="group">
+      <obj_property name="label">SR1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb/duv/U1/SR1/S" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">S</obj_property>
+         <obj_property name="ObjectShortName">S</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/SR1/R" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">R</obj_property>
+         <obj_property name="ObjectShortName">R</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/SR1/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/SR1/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group130" type="group">
+      <obj_property name="label">MUX2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb/duv/U1/MUX2/uno" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">uno</obj_property>
+         <obj_property name="ObjectShortName">uno</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/MUX2/cero" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cero</obj_property>
+         <obj_property name="ObjectShortName">cero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/MUX2/sel" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sel</obj_property>
+         <obj_property name="ObjectShortName">sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/MUX2/Q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Q</obj_property>
+         <obj_property name="ObjectShortName">Q</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group135" type="group">
+      <obj_property name="label">SR2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb/duv/U1/SR2/S" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">S</obj_property>
+         <obj_property name="ObjectShortName">S</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/SR2/R" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">R</obj_property>
+         <obj_property name="ObjectShortName">R</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/SR2/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb/duv/U1/SR2/q" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">q</obj_property>
+         <obj_property name="ObjectShortName">q</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
